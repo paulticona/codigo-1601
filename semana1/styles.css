@@ -1,3 +1,17 @@
 body{
     background-color: #002B36;
 }
+img{
+    width: 250px;
+}
+.box{
+    display: flex;
+    position: relative;
+}
+video{
+    display: block;
+    width: 450px;
+}
+.reto{
+    width: 20px;
+}
