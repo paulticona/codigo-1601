@@ -4,34 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/semana1/styles.css">
+    <link rel="stylesheet" href="/semana1/css/stylesTabla.css">
     <title>Document</title>
 
 </head>
 <body>
     <header>
-        <h1 class="title">Tablas</h1>
+        <h1 class="title">Priridad de Estilos</h1>
     </header>
     <hr class="line">
-    <table class="table1">
-        <tr class="fila1">
-            <td>ID</td> 
-            <td>NOMBRE</td>
-            <td>EDAD</td>
-        </tr>
-        <tr class="fila2">
-            <td rowspan="2">#456</td>
-            <td>Bruno Diaz</td>
-            <td>31</td>
-        </tr>
-        <tr class="fila3">
-            <td>Linder Hasingger</td>
-            <td>22</td>
-        </tr>
-        <tr class="fila4">
-            <td>#264</td>
-            <td colspan="2">Jaime Farfan</td>
-        </tr>
-    </table>
+    <div class="tabla1">
+        <table class="table1">
+            <!--
+            <tr>
+                <th>Prioridad</th>
+                <th>Origen</th>
+                <th>Selector / Ejemplo</th>
+            </tr> -->   
+            <tr class="head">
+                <th>Prioridad</th>
+                <th>valor</th>
+                <th>Ejemplo</th>
+            </tr>
+            <tr class="filaImpar">
+                <td>1</td>
+                <td><code>!important</code></td>
+                <td><code>color: #cccccc !important;</code></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><code>inline</code></td>
+                <td><code>Style="color:"#cccccc""</code></td>
+            </tr>
+            <tr class="filaImpar">
+                <td>3</td>
+                <td><code>#id nesting</code></td>
+                <td><code>table#casilla{color:"#cccccc"}</code></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><code>id:"" </code></td>
+                <td><code>#tabla1{color:"cccccc"}</code></td>
+            </tr>
+            <tr class="filaImpar">
+                <td>5</td>
+                <td><code>#class nested</code></td>
+                <td><code>elemento class{}</code></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><code>class:""</code></td>
+                <td><code>.table1{color:"cccccc"}</code></td>
+            </tr>
+            <tr class="filaImpar">
+                <td>7</td>
+                <td><code>HTML Element</code></td>
+                <td><code>elemento{...}</code></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

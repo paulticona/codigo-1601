@@ -1,0 +1,97 @@
+
+body{
+    background-color: lightseagreen;
+}
+h1{
+    /* font familiy para canbiar el tipo de fuente/letra */
+    /* si una fuente no existe en css tenemos la opcion de poner varios tipos de letra
+    para que si la primera no existe busque en la segunda y así sucesivamente
+    sino encuentra ninguna utiliza la de new roman */
+    font-family: 'Roboto';
+    font-size: 45px;
+    /* font  weight para el peso de la fuente del 100 al 900*/
+    /* !importante: en font weight no hay unidades de medida */
+    /* 700=bold
+    900=bolder */
+    font-weight: 100;
+    text-decoration: none;
+}
+.parrafo{
+    font-family: 'teko-bold';
+    /* font size nos permite designar el tamaño del texto */
+    font-size: 32px;
+}
+/* al poner none en una propiedad lo invalidamos */
+.link-a{
+    color: black;
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    /* con la porpiedad color: sirve para cambiar el color del texto de un texto  */
+    /* hexadecimal: aplicar color basado en 6 dígitos alfanúmericos */
+    
+}
+
+/* !teoría de colores */
+/* hexadecimal
+RGB = red green blue
+RGBA= red green blue alpha
+alpha= opacidad 0-1 (nivel de opacidad)
+hsl= hue saturacion lightness
+ */
+
+ body{
+     font-family: Cambria, Georgia, serif;
+
+ }
+ ul{
+     border-radius: 5px;
+     width: 20%;
+     background-color: lightblue;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+}
+.span1{
+    text-decoration: line-through;
+    text-transform: capitalize;
+}
+.span2{
+    text-decoration: overline;
+    text-transform: none;
+}
+.span3{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.span4{
+    text-decoration:line-through;
+    text-decoration-color: blue;
+    text-transform: lowercase;
+}
+.span5{
+    text-decoration: overline;
+    background-color: aqua;
+    text-decoration-color: bisque;
+    text-transform: none;
+}
+/* lowercase= minuscula
+uppercase= mayuscula
+capitalize= primera letra en mayuscula */
+.span6{
+    text-decoration: underline;
+    background-color: #fafafa;
+    text-decoration-color: coral;
+    color: blue;
+    /* text transform para cambiar el estilo de mayuscula o minuscula */
+    text-transform: lowercase;
+}
+@font-face{
+    font-family: "teko-bold";
+    src: url("../fonts/Teko-Bold.ttf");
+}
+.fuente{
+    color: blue;
+}

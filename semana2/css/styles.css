@@ -1,0 +1,84 @@
+
+
+/*dando valores de caja*/
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.columna, table{
+    border-collapse: collapse;
+    padding: 17px;
+}
+
+table{
+    width: 100%;
+}
+    table, .item, .columna{
+    border: 1px solid #cccccc;
+}
+.columna1{
+    width: 25%;
+}
+.columna2{
+    width: 30%;
+}
+.columna3{
+    width: 25%;
+}
+.columna4{
+    width: 20%;
+}
+.ejemplo{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*valores de color*/
+.columna{
+    color: #73777B;
+    font-size: xx-large;
+    font-family: 'Teko-Light', sans-serif;
+    font-weight: 600;
+}
+.cabecera{
+    background-color: rgb(217, 213, 213);
+  
+}
+.fila .item{
+    padding: 10px;
+}
+
+/* Tipografia*/
+@font-face {
+    font-family: 'Teko-Bolde';
+    src: url(../fonts/Teko-Bold.ttf);
+}
+@font-face{
+    font-family: 'Teko-Light';
+    src: url(../fonts/Teko-Light.ttf);
+}
+
+/*Estilos de nombre d epropiedad*/
+b{  
+    color: #0095eb;
+    font-size: 1.5em;
+    font-weight: 700;
+    border: 1px solid #e8e8e8;
+    padding: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+code{
+    display: block;
+    margin-top: 10px;
+}
+.item_prop{
+    text-align: center; 
+    align-items: center;
+}
+.item span{
+    display: inline-block;
+    
+}
