@@ -138,8 +138,18 @@ code{
     top: calc(50% - 5px);
     left: calc(50% - 5px);
 }
+/* *
+ * CSS de los Ejemplos 
+*/
+.item_ejemplo{
+    align-items: center;
+}
+.text{
+    width: 100%;
+    text-align: center;
+}
 
-/* *ejemplo de display Bandera de portugal*/
+/* * ejemplo de display Bandera de portugal*/
 .bandera{
     height: 100px;
     border: solid;
@@ -166,4 +176,48 @@ code{
     position: absolute;
     top: calc(50% - 20px);
     left: calc(40% - 20px);
+}
+/* *Ejemplo de font-family*/
+.ejemplo_ff{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* *Ejemplo de font-style */
+.ejemplo_fs{
+    font-style:oblique;
+}
+/* * Ejemplo de font-variant*/
+.ejemplo_fv{
+    font-variant: small-caps;
+}
+/* * Ejemplo de font-variant*/
+.ejemplo_fw{
+    font-weight: 700;
+}
+/* * Ejemplo de font-variant*/
+.ejemplo_fsz{
+    font-size: xx-large;
+}
+/* *ejemplo de border-whidth ampliado*/
+.border{
+    width: 80%;
+    height: 100px;
+    border: 1px solid red;
+}
+.border_1{
+    border-top-width: 10px;
+    border-right-width: 2px;
+    border-bottom-width: 10px;
+    border-left-width: 2px;
+}
+/**Ejemplo de border-whidth reducido*/
+.border_2{
+    border-width: 1px 15px;
+}
+/**Ejemplo de border-color*/
+.border_3{
+    border-width: 5px;
+    border-top-color: #0095eb;
+    border-right-color: #73777B;
+    border-bottom-color: aqua;
+    border-left-color: green;
 }
