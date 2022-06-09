@@ -7,14 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/semana2/css/styles.css">
     <title>Fuentes</title>
 </head>
 <body>
     <header>
         <h1>Estilizando el Proyecto</h1>
+        <nav>
+            <ul class="menu">
+                <li class="menu_item"><a class="menu_link" href="">Inicio</a></li>
+                <li class="menu_item"><a class="menu_link" href="">Nosotros</a></li>
+                <li class="menu_item"><a class="menu_link" href="">Contacto</a></li>
+                <li class="menu_item"><a class="menu_link" href="">Productos</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav></nav>
+    
 
     <div class="table">
         <table>
@@ -31,31 +42,31 @@
                <td class="item item_prop"><code><b>font-family:</b></code></td>
                <td class="item">Familias de fuentes</td>
                <td class="item">nombre-familia |*</td>
-               <td class="item"><p class="ejemplo">Hola coders.</p></td>
+               <td class="item"></td>
            </tr> 
            <tr class="fila fila3">
                <td class="item item_prop"><code><b>font-style:</b></code></td>
                <td class="item">Estilo de fuente.</td>
                <td class="item">normal | italic | oblique</td>
-               <td class="item"><p></p></td>
+               <td class="item item_ejemplo"></td>
            </tr>
            <tr class="fila fila4">
                <td class="item item_prop"><code><b>font-variant:</b></code></td>
                <td class="item">Convierte a mayúsculas manteniendo todas las letras en un tamaño inferior a la primera</td>
                <td class="item"> normal | small-caps</td>
-               <td class="item"></td>
+               <td class="item item_ejemplo"></td>
            </tr>
            <tr class="fila fila5">
                <td class="item item_prop"><code><b>font-weight:</b></code></td>
                <td class="item">Anchura de los caracteres. Normal=400, Negrita=700</td>
                <td class="item">normal | bold | bolder | ligter | 100 - 900</td>
-               <td class="item"></td>
+               <td class="item item_ejemplo"></td>
            </tr>
            <tr class="fila fila6">
                <td class="item item_prop"><code><b>font-size:</b></code></td>
                <td class="item">Tamaño de la fuente</td>
                <td class="item">xx-small | x-small | small | medium | large | x-large | xx-large | larger | smaller | longitud | porcentaje</td>
-               <td class="item"></td>
+               <td class="item item_ejemplo"></td>
            </tr>
            <tr class="fila fila_tema">
                <th colspan="4" class="columna item_tema">Modelo de Cajas</th>
@@ -69,13 +80,13 @@
                 </td>
                <td class="item">Anchura del borde superior, derecho, inferior, inferior o izquierdo</td>
                <td class="item">thin | medium | thick | longitud</td>
-               <td class="item"></td>
+               <td class="item item_ejemplo"></td>
            </tr>
            <tr class="fila fila8">
                <td class="item item_prop"><code><b>border-width</b></code></td>
                <td class="item">Anchura del borde</td>
                <td class="item">thin | medium | thick | longitud {1,4}</td>
-               <td class="item"></td>
+               <td class="item item_ejemplo"></td>
            </tr>
            <tr class="fila fila8">
                <td class="item item_prop">
@@ -86,13 +97,13 @@
             </td>
                <td class="item">Color del borde superior, derecho, inferior, inferior o izquierdo</td>
                <td class="item">color | transparent</td>
-               <td class="item"></td>
+               <td class="item item_ejemplo"></td>
            </tr>
            <tr class="fila fila8">
                <td class="item item_prop"><code><b>border-color:</b></code></td>
                <td class="item">Color del borde</td>
                <td class="item">color | transparent</td>
-               <td class="item"></td>
+               <td class="item item_ejemplo"></td>
            </tr>
            <tr class="fila fila8">
                <td class="item item_prop">
@@ -103,7 +114,7 @@
                </td>
                <td class="item">Estilo del borde superior, derecho, inferior, inferior o izquierdo</td>
                <td class="item">none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset</td>
-               <td class="item"></td>
+               <td class="item item_ejemplo"></td>
            </tr>
            <tr class="fila fila8">
                <td class="item item_prop"><code><b>border-style:</b></code></td>
@@ -114,7 +125,7 @@
                <td class="item item_prop"><code><b>border:</b></code></td>
                <td class="item">Ancho, estilo y color para los bordes</td>
                <td class="item">border-width | border-style | border-color</td>
-               <td class="item">
+               <td class="item item_ejemplo">
                    <span><p>dotted</p></span>
                    <span><p>dashed</p></span>
                    <span><p>solid</p></span>
@@ -123,18 +134,95 @@
                    <span><p>ridge</p></span>
                </td>
            </tr>
-           <tr class="fila fila8">
-               <td class="item item_prop"></td>
-               <td class="item"></td>
-               <td class="item"></td>
-               <td class="item"></td>
+           <tr class="fila fila_tema">
+               <th colspan="4" class="columna item_tema">Colores y Fondo</th>
            </tr>
            <tr class="fila fila8">
-               <td class="item item_prop"></td>
+               <td class="item item_prop"><code><b>color:</b></code></td>
+               <td class="item">Color de texto</td>
+               <td class="item">RGB | HSL | HEX | nombre del color | RGBA | HSLA</td>
+               <td class="item item_ejemplo"></td>
+           </tr>
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b>background-color:</b></code></td>
+               <td class="item">Color de fondo</td>
+               <td class="item">RGB | HSL | HEX | nombre del color | RGBA | HSLA</td>
+               <td class="item item_ejemplo"></td>
+           </tr> 
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b>background-image:</b></code></td>
+               <td class="item">Imagen de fondo</td>
+               <td class="item">url(«…») | none</td>
+               <td class="item item_ejemplo"></td>
+           </tr> 
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b>background-repeat:</b></code></td>
+               <td class="item">Repeticion de la imagen de fondo</td>
+               <td class="item">repeat | repeat-x | repeat-y | no-repeat</td>
+               <td class="item item_ejemplo"></td>
+           </tr> 
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b>background-attachment:</b></code></td>
+               <td class="item">Desplazamiento de la imagen de fondo</td>
+               <td class="item">scroll | fixed</td>
+               <td class="item item_ejemplo"></td>
+           </tr> 
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b>background-position:</b></code></td>
+               <td class="item">Posicion de la imagen de fondo</td>
+               <td class="item">percentage | length | left | center | right</td>
+               <td class="item item_ejemplo"></td>
+           </tr> 
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b>background-size:</b></code></td>
+               <td class="item">Tamaño de la imagen de fondo</td>
+               <td class="item">Valor</td>
+               <td class="item item_ejemplo"></td>
+           </tr> 
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b>opacity:</b></code></td>
+               <td class="item">Transparencia de un elemento</td>
+               <td class="item">[0-1]</td>
+               <td class="item item_ejemplo"></td>
+           </tr>
+           <tr class="fila fila_tema">
+               <th colspan="4" class="columna item_tema">Posicion y comportamiento de contenedores</th>
+           </tr>
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b>display:</b></code></td>
+               <td class="item">Comportamiento del contenedor</td>
+               <td class="item">inline | block | inline-block | none</td>
+               <td class="item item_ejemplo">
+                   <div class="bandera">
+                       <div class="verde"></div>
+                       <div class="rojo"></div>
+                       <div class="escudo"></div>
+                   </div>
+               </td>
+           </tr>   
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b>position:</b></code></td>
+               <td class="item">Esquema de posicionmiento</td>
+               <td class="item">static | relative | absolute | fixed | sticky</td>
+               <td class="item">
+                   <div class="padre">
+                       <div class="hijo">
+                       </div>
+                   </div>
+               </td>
+           </tr>   
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b></b></code></td>
                <td class="item"></td>
                <td class="item"></td>
+               <td class="item item_ejemplo"></td>
+           </tr>   
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b></b></code></td>
                <td class="item"></td>
-           </tr>    
+               <td class="item"></td>
+               <td class="item item_ejemplo"></td>
+           </tr>       
            
         </table>
     </div>
