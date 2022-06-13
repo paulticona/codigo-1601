@@ -1,0 +1,97 @@
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #1c253f;
+    font-family: 'Fredoka' sans-serifs, sans-serif;
+}
+
+/** dimeciones del contenedor*/
+section{
+    left: calc(50% - 300px);
+    top: 350px;
+    position: absolute;
+    width: 600px;
+}
+.root_table{
+    width: 100%;
+    position: relative;
+}
+
+.content_table{
+    border-radius: 10px;
+}
+
+/**text*/
+h1{
+    margin-bottom: 0;
+    margin-left: 5px;
+    color: white;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+/**Filas 1 y 2*/
+.row_profile{
+    border-radius: 10px;
+    background-color: #22326b;
+}
+.content_table tr td{
+    color: white;
+    width: 200px;
+    height: 100px;
+}
+.row_profile{
+    box-shadow: 5px 5px 10px black;
+}
+
+/* * Inputs*/
+img{
+    margin-left: 30px;
+    width: 30%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.text, .button{
+
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+}
+.text{
+    width: 99%;
+    outline-color: green;
+}
+.text:focus{
+    background-color: lightgreen;
+}
+.content_table table tr td div{
+    height: 50%;
+}
+.button{
+    color: white;
+    background-color: #0d6efd;
+    height: 27px;
+    width: 100%;
+}
+.button:hover{
+    color: rgb(65, 235, 65);
+    box-shadow: inset 0 0 10px blue;
+}
+.espacio{
+    height: 5px;
+}
+.texto_grey{
+    font-weight: 700;
+    color: gray;
+}
+.link_git{
+    text-decoration: none;
+    color: inherit;
+}
+
+

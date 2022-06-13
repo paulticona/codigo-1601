@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 10px;  
+}
+/**Contenedor*/
+.contenedor{
+    position: relative;
+    height: 100vh;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #1c253f;
+}
+.contenedor1{
+    position:absolute;
+    left: calc(50% - 300px);
+    top: calc(50% - 76px);
+    display: flex;
+}
+h1{
+    color: #C9D1D9;
+    font-size: small;
+}
+
+/**Estilos de la tabla*/
+.table{
+   
+    width: 600px;
+    padding-top: 25p;
+}
+/**caja 1*/
+.inputs{
+    position: relative;
+}
+td{
+    width: 200px;
+}
+input[type="text"]{
+
+    height: 20px;
+    border: none;
+    border-radius: 2.5px;
+    width: 80%;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    -ms-border-radius: 2.5px;
+    -o-border-radius: 2.5px;
+}
+input[type="button"]{
+    position: absolute;
+    height: 22px;
+    border: none; 
+    border-radius: 2.5px;
+    color: white;
+    width: 110px;
+    top: -0px;
+    left: 490px;
+    background-color: #0d6efd;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    -ms-border-radius: 2.5px;
+    -o-border-radius: 2.5px;
+}
+
+/**caja 2*/
+.perfil{
+    height: 100px;
+    background-color: #22326b;
+}
+
+.nombre, b{
+    color: #C9D1D9;
+}
+.perfil span{
+    color: #545B63;
+}
+.img{
+    padding-left: 20px;
+}
+img{
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
