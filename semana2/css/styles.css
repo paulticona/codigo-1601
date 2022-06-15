@@ -1,19 +1,36 @@
 /* *Navegador*/
+nav{
+    width: 100vw;
+}
 .menu_item{
+    margin-right: 10px;
+    height: 40px;
     display: inline;
 }
 .menu{
-    padding: 10px;
-    background-color: #73777B;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 5px 8px black;
 }
 .menu_link{
     color: #cccccc;
     text-decoration: none;
 }
+.menu_link:hover{
+    border-radius: 10px;
+    background-color: #0095eb;
+}
 .table{
     position: relative;
     top: 150px;
 }
+/*
+*navegador flexible
+*/
+
 
 header{
     width: 97.4%;
@@ -22,8 +39,8 @@ header{
 }
 /* * Valores de caja para la Tabla*/
 body{
-    margin-right: 20px;
-    margin-left: 20px;
+    padding: 0;
+    margin: 0;
 }
 .columna, table{
     border-collapse: collapse;
@@ -325,5 +342,16 @@ code{
     -ms-border-radius: 5px;
     -o-border-radius: 5px
 }
-
+.box{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(red, red, red);
+    transition: all 6s;
+}
+.box:hover{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(90deg,red 33%, white 33%, white 66%, red 66%);
+    transform: all 2s;
+}
 

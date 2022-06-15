@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1c253f;
+    font-family: 'Fredoka' sans-serifs, sans-serif;
+}
+.search{
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+}
+.container{
+    margin-top: 30vh;
+    align-items: center;
+}
+.inputs, .perfil{
+    display: flex;
+}
+.inputs{
+    width: 100%;
+    justify-content: space-between;
+}
+.inputs > div{
+    width: ;
+}
+.text, .button{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+}
+.text{
+    width: 485px;
+}
+img{
+    width: 50px;
+    border-radius: 50%;
+}
+.perfil{
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    justify-content: space-around;
+    background-color: #22326b;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+.button{
+    color: white;
+    background-color: #0d6efd;
+    width: 100px;
+    height: 22px;
+}
+.text:focus{
+    background-color: lightgreen;
+}
+.button:hover{
+    color: rgb(65, 235, 65);
+    box-shadow: inset 0 0 10px blue;
+}
+.texto_grey{
+    font-weight: 700;
+    color: gray;
+}
+.link_git{
+    text-decoration: none;
+    color: inherit;
+}
