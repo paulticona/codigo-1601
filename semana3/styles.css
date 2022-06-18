@@ -1,27 +1,41 @@
-body{
-    margin: 0;
+*{
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
-.title{
+body{
+    background-color: #c8ebe3;
+    color: #fff;
+    
+}
+main{
+    height: 70vh;
+    display: flex;
+    
+}
+header{
+    background-color: #2ccac1;
+    height: 10vh;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 24px;
-    color: rgb(27, 27, 90);
 }
-hr{
-    margin-top: 0;
-    width: 42px;
+aside{
+    background-color: #6edc6e;
+    flex-grow: 1;
+    flex-grow: 0.5;
 }
 .container{
-    border: 1px solid red;
-    width: 600px;
-    height: 600px;
-    display: flex;  
-    
+    background-color: #fbb14a;
+    flex-grow: 2;
 }
-.container div{
-    
-    background-color: aqua;
-    justify-content: safe;
+footer{
+    background-color: #2ccac1;
+    height: 20vh;
+    text-align: center;
 }
+
+@media only screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+    }
+}
+/**---------------*/
+/* paso 1 quitamos margenes a todos los elementos */

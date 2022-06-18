@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #666;
+    background-color: #c9c9c9;
+    
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 20px;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  
+  header a:hover {
+    color: #b2dfdb;
+    transition: all 0.5s;
+  }
+  
+  /* DROPDOWN: Menu desplegable */
+  .dropdown {
+    display: block;
+  }
+  
+  /* El menú escondido */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    margin-left: -10%;
+  }
+  
+  /* Cada elemento del menú escondido */
+  .dropdown-content li {
+    display: block;
+    padding: 20px 10px;
+  }
+  
+  /* Las anclas que estén dentro de cada elemento del menú escondido */
+  .dropdown-content li a {
+    text-decoration: none;
+    color: #666;
+  }
+  .dropdown-content li a:hover {
+    text-decoration: underline;
+    color: #333;
+  }
+  
+  /* 
+      Cuando el cursor está por encima de dropdown (padre) 
+      Aplicar solo a dropdown-content (menu) los estilos:
+  */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* 
+      Cuando el cursor está por encima de dropdown (padre) 
+      Aplicar solo a dropdown-button (botón) los estilos:
+  */
+  .dropdown:hover .dropdown-button {
+    text-decoration: underline;
+  }
+  /** MAIN  contenido de la pagina*/
+/**VARIABLES**/
+  
+  main{
+    width: 100%;
+}
+  #container{
+    margin: 50px auto;
+    width: 60%;
+    
+  }
+  
+  .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+  .row > div{
+    width: 50%;
+    text-align: center;
+  }
+  .tr:hover{
+    color: #019879;
+  }
+  .row:hover img{
+    box-shadow: 3px 3px 10px #019879;
+  }
+  .tr:hover div:last-child{
+    font-size: 50px;
+  }
+  .th{
+    background-color: #019879;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px 10px 0 0;
+  }
+  .tr{
+    font-size: larger;
+    font-weight: 800;
+    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 1px solid #666;
+  }
+  .tr:nth-child(even){
+    background-color: white;
+    background-color: transparent;
+  }
+  .tr:last-child{
+    border-bottom: 0;
+    border-radius: 0 0 10px 10px;
+  }
+  .table{
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    border-bottom: 3px solid #019879;
+  }
+  /*new*/
+  .page{
+    /*background-image: url(../img/HD-wallpaper-seleccion-peruana-conmebol-qatar-2022-peru-fifa.jpg);*/
+    height: 100%;
+  }
+  h2{
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .row img{
+    width: 70px;
+    border-radius: 5px;
+  }
+
+  
+  @media only screen and (max-width: 992px) {
+    .page{
+        display: flex;
+    }
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100vh;
+      width: 15%;
+      padding: 20px;
+    }
+  
+    header:hover {
+      width: 30%;
+      padding: 20px 50px;
+      transition: all 1s;
+    }
+  
+    header ul {
+      margin-top: 20px;
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .dropdown-content {
+      margin-top: 0px;
+      margin-left: 40px;
+    }
+  }
+  @media only screen and (max-width: 639px) {
+    h1{
+    font-size: 1em;
+    }
+  }
