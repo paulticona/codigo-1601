@@ -11,8 +11,8 @@
     --capri-color: #3ebdfc;
     --gray-color: #bab8ad;
     /*Fuentes*/
-    --font-fraunces: 'Frauncces', sans-serif;
-    --font-bariow: 'Barlow', sans-serif;
+    --font-fraunces: 'Fraunces', sans-serif;
+    --font-barlow: 'Barlow', sans-serif;
 }
 header{
     background-color: var(--capri-color);
@@ -42,10 +42,11 @@ ul > li a{
     border-radius: 25px;
 }
 
-/*----------------------MAIN----------------------**/
+/**----------------------MAIN----------------------**/
+/**--------presetacion-------*/
 .bg-orange {
     height: 60vh;
-    background: url("../images/desktop/image-header.jpg");
+    background: url("./img/desktop/image-header.jpg");
     background-color: var(--capri-color);
     background-repeat: no-repeat;
     background-position: top;
@@ -154,7 +155,8 @@ ul > li a{
     flex-direction: column;
   }
   .title2{
-    font-family: var(--font-barlow);
+    font-weight: 900;
+    font-family: var(--font-fraunces);
     color: var(--gray-color);
     display: flex;
     flex-grow: 1.5;
@@ -163,7 +165,7 @@ ul > li a{
     text-transform: uppercase;
     font-size: 7px;
     letter-spacing: 4px;
-    font-weight: 900;
+    
   }
   .contenido{
     flex-grow: 2;
@@ -195,5 +197,173 @@ ul > li a{
   }
   .contenido-testimonio span{
     color: var(--gray-color);
-    margin-top: 20px;
+    margin-top: 10px;
   }
+  
+
+/**------------MOSTRARIO------------------------*/
+.bg-products{
+  background-color: #63a496;
+  height: 40vh;
+  display: flex;
+}
+.item-products{
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.img1{
+  background-image: url(./img/desktop/image-gallery-milkbottles.jpg);
+}
+.img2{
+  background-image: url(./img/desktop/image-gallery-orange.jpg);
+}
+.img3{
+  background-image: url(./img/desktop/image-gallery-cone.jpg);
+}
+.img4{
+  background-image: url(./img/desktop/image-gallery-sugarcubes.jpg);
+}
+
+/**--------------------FOOTER-----------------------------*/
+.bg-footer{
+  background-color: var(--polished-color);
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+.title3{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 0.5;
+}
+.title img{
+  width: 10px;
+}
+.nav-footer{
+  font-family: var(--font-barlow);
+  margin-top: 30px;
+  text-align: center;
+  flex-grow: 1.5;
+}
+.link-footer{
+  color: #367468;
+  text-decoration: none;
+  padding: 0px 20px;
+  
+}
+.link-footer:hover{
+  color: var(--white-color);
+}
+.networks{
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+}
+.networks .link-networks{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 10px 20px;
+}
+.link-networks svg:hover path{
+  fill:var(--white-color); 
+}
+@media only screen and (max-width: 992px) {
+
+  /**NAV*/
+  ul{
+    flex-direction: column;
+  }
+
+  /**Presentacion*/
+  .bg-orange{
+    background-image: url(./img/mobile/image-header.jpg);
+  }
+  .title{
+    font-size: 2.5em;
+    margin-bottom: 50px;
+  }
+  .second-container{
+    width: 100vw;
+    flex-direction: column;
+
+  }
+  
+  .second-container div{
+    
+    width: 100%;
+  }
+  section{
+    width: 80%;
+    text-align: center;
+  }
+  section p{
+    color: #7E7E87;
+    line-height: 1.5em;
+  }
+  .bg-egg{
+    order: -1;
+    background-image: url(./img/mobile/image-transform.jpg);
+  }
+  .bg-cup{
+    background-image: url(./img/mobile/image-stand-out.jpg);
+  }
+  .bg-cherry{
+    background-image: url(./img/mobile/image-graphic-design.jpg);
+  }
+  .bg-orange-complete{
+    background-image: url(./img/mobile/image-photography.jpg);
+  }
+  .child{
+    background-size: cover;
+  }
+
+  /**Testimonials*/
+  .bg-testimonio{
+    height: auto;
+    gap: 5em;
+    margin-bottom: 5em;
+  }
+  .contenido{
+    flex-direction: column;
+    gap: 5em;
+    justify-content: space-around;
+  }
+  .contenido-testimonio{
+    width: auto;
+  }
+  .contenido-testimonio h4{
+    font-weight: 900;
+  }
+  .title2{
+    height: 10em;
+    font-size: 0.7em;
+  }
+  .contenido-testimonio p{
+    margin: 30px 20px;
+  }
+
+  /** Mostario*/
+  .bg-products{
+    flex-wrap: wrap;
+
+  }
+  .item-products{
+    width: 50%;
+    height: auto;
+  }
+
+
+}
+@media only screen and (max-width: 992px){
+
+}
+
+
+
+
+
