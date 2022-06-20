@@ -10,7 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+        
     <title>Fuentes</title>
 </head>
 <body>
@@ -304,30 +311,83 @@
                 <th colspan="4" class="columna item_tema">Cajas flexibles</th>
            </tr>
            <tr class="fila fila8">
-               <td class="item item_prop"><code><b>Display</b></code></td>
-               <td class="item">La propiedad CSS display especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible). </td>
-               <td class="item"></td>
-               <td class="item item_ejemplo">
+               <td class="item item_prop"><code><b>flexbox</b></code></td>
+               <td class="item">Flexbox es un método de diseño de página unidimensional para compaginar elementos en filas o columnas. Los elementos de contenido se ensanchan para rellenar el espacio adicional y se encogen para caber en espacios más pequeños. En este artículo expondremos todas sus características básicas.</td>
+               <td class="item item_ejemplo" colspan="2">
                     <div>
+                        <div class="example_header">
+                            <h2>Sample flexbox example</h2>
+                        </div>
+                        <div class="example_content">
+                            <div class="example_child">
+                                <h3>First article</h3>
+                                <p class="example_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat dolorem sint asperiores eius excepturi.
+                                </p>
+                            </div>
+                            <div class="example_child">
+                                <h3>Second article</h3>
+                                <p class="example_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat dolorem sint asperiores eius excepturi.</p>
+                            </div>
+                            <div class="example_child">
+                                <h3>Third article</h3>
+                                <p class="example_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat dolorem sint asperiores eius excepturi.</p>
+                            </div>
+                        </div>
                     </div>
                </td>
            </tr>
            <tr class="fila fila8">
-               <td class="item item_prop"><code><b></b></code></td>
-               <td class="item"></td>
-               <td class="item"></td>
+            <td class="item item_prop"><code><b>display:</b></code></td>
+            <td class="item">La propiedad CSS display especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible). </td>
+            <td class="item">
+                / * Valores <"display-outside"> * / <br>
+
+                display: block;
+                display: inline;
+                display: run-in; <br> <br>
+                
+                / * Valores <"display-inside"> * / <br>
+                display: flow;
+                display: flow-root;
+                display: table;
+                display: flex;
+                display: grid;
+                display: ruby;
+                display: subgrid;</td>
+            <td class="item item_ejemplo">
+                 <div>
+                    <h1>display: flex;</h1>
+                    <p>es igual a caja flexible</p>
+                 </div>
+            </td>
+        </tr>
+           <tr class="fila fila8">
+               <td class="item item_prop"><code><b>flex-direction:</b></code></td>
+               <td class="item">La propiedad CSS flex-direction especifica cómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal y la dirección (normal o al revés).</td>
+               <td class="item">row | row-reverse | column | column-reverse</td>
                <td class="item item_ejemplo">
-                    <div>
+                    <div class="flexbox_direction">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
                     </div>
                </td>
            </tr>
            <tr class="fila fila8">
-               <td class="item item_prop"><code><b></b></code></td>
-               <td class="item"></td>
-               <td class="item"></td>
+               <td class="item item_prop"><code><b>flex-wrap:</b></code></td>
+               <td class="item">La propiedad flex-wrap de CSS  especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas. Si la cobertura (wrap) está permitida, esta propiedad también te permite controlar la dirección en la cual serán apilados los elementos.</td>
+               <td class="item">nowrap | wrap | wrap-reverse | inherit</td>
                <td class="item item_ejemplo">
-                    <div>
-                    </div>
+                <div class="flexbox_flex-wrap">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </div>
                </td>
            </tr>
            <tr class="fila fila8">

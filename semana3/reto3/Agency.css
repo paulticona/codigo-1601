@@ -22,6 +22,12 @@ nav{
     justify-content: space-around;
     padding: 20px;
 }
+.button{
+  width: 30px;
+  background-color: var(--capri-color);
+  border: none;
+  display: none;
+}
 ul {
     display: flex;
     list-style: none;
@@ -277,6 +283,10 @@ ul > li a{
   /**NAV*/
   ul{
     flex-direction: column;
+    display: none;
+  }
+  .button{
+    display: flex;
   }
 
   /**Presentacion*/

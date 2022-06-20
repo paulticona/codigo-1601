@@ -57,6 +57,12 @@ table{
     table, .item, .columna{
     border: 1px solid #cccccc;
 }
+table .item:nth-child(3n){
+    background-color: #1B1B1B;
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 100
+}
 .columna1{
     width: 25%;
 }
@@ -356,7 +362,54 @@ code{
 }
 
 /*
-*elementos fle-box
+*Elementos fle-box
+    *teoria y conceptos
 */
+.example_header{
+    background: blueviolet;
+    padding: 1px;
+    text-align: center;
+}
+.example_content{
+    display: flex;
+}
+.example_child{
+    background-color: cyan;
+    margin: 7px;
+    padding: 5px;
+    color: #1B1B1B;
+}
+
+/*flex-direction*/
+.flexbox_direction{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.flexbox_direction div{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 5px;
+    padding: 10px;
+}
+
+/*flex-wrap*/
+.flexbox_flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexbox_flex-wrap div{
+    background-color: #1B1B1B;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 2px;
+}
+
 
 
