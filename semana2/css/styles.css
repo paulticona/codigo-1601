@@ -403,13 +403,36 @@ code{
     display: flex;
     flex-wrap: wrap;
 }
-.flexbox_flex-wrap div{
+.flexbox_flex-wrap div, .flexbox_flex-flow div{
     background-color: #1B1B1B;
     color: white;
     border-radius: 5px;
     padding: 20px;
     margin: 2px;
 }
+.flexbox_flex-flow{
+    display: flex;
+    flex-flow: wrap-reverse;
+}
+
+/*Flex:*/
+
+#flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+#flex-container > .flex-item {
+	flex: 0.5;
+    border: 1px solid red;
+}
+
+#flex-container > .raw-item {
+    border: 1px solid green;
+	width: 5rem;
+    flex: 2 0.5 10%;
+}
+
 
 
 

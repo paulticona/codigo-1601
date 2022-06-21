@@ -391,21 +391,54 @@
                </td>
            </tr>
            <tr class="fila fila8">
-               <td class="item item_prop"><code><b></b></code></td>
-               <td class="item"></td>
-               <td class="item"></td>
+               <td class="item item_prop"><code><b>flex-flow:</b></code></td>
+               <td class="item">La propiedad CSS flex-flow  es una propiedad atajo para las propiedades individuales flex-direction y flex-wrap.</td>
+               <td class="item">/* flex-flow: <'flex-direction'> */ <br>
+                flex-flow: row;
+                flex-flow: row-reverse;
+                flex-flow: column;
+                flex-flow: column-reverse; 
+                <br>
+                <br>
+                
+                /* flex-flow: <'flex-wrap'> */
+                <br>
+                flex-flow: nowrap;
+                flex-flow: wrap;
+                flex-flow: wrap-reverse;
+                <br>
+                <br>
+                
+                /* flex-flow: <'flex-direction'> and <'flex-wrap'> */
+                <br>
+                flex-flow: row nowrap;
+                flex-flow: column wrap;
+                flex-flow: column-reverse wrap-reverse;
+                </td>
                <td class="item item_ejemplo">
-                    <div>
-                    </div>
+                <div class="flexbox_flex-flow">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </div>
                </td>
            </tr>
            <tr class="fila fila8">
-               <td class="item item_prop"><code><b></b></code></td>
-               <td class="item"></td>
-               <td class="item"></td>
+               <td class="item item_prop"><code><b>flex:</b></code></td>
+               <td class="item">La propiedad CSS flex es una propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. Los elementos flexibles pueden ser estirados para utilizar el espacio disponible proporcional a su factor de crecimiento flexible o su factor de contracción flexible para evitar desbordamiento.</td>
+               <td class="item">flex-grow: 0 & flex-shrink: 1 & flex-basis: auto <br><br>
+                Puede recibir los tres valores o uno de ellos.
+               </td>
                <td class="item item_ejemplo">
-                    <div>
-                    </div>
+                <div id="flex-container">
+                    <div class="flex-item" id="flex">Flex box</div>
+                    <div class="raw-item" id="raw">Raw box</div>
+                </div>
                </td>
            </tr>
            <tr class="fila fila8">
