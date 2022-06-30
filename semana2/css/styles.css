@@ -432,6 +432,26 @@ code{
 	width: 5rem;
     flex: 2 0.5 10%;
 }
+.align-items_container{
+    background-color: lightskyblue;
+    border-radius: 5px;
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.align-items_container div{
+    background-color: #1B1B1B;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    height: 40px;
+}
+.self-container{
+    display: flex;
+    background-color: antiquewhite;
+}
+
 
 
 

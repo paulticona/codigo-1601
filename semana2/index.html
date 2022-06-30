@@ -337,6 +337,13 @@
                </td>
            </tr>
            <tr class="fila fila8">
+            <td class="item item_prop"><code><b>Modelo de caja flexible</b></code></td>
+            
+            <td class="item item_ejemplo" colspan="3">
+                 <img src="./img/flexbox-diagrama-css.jpg" alt="">
+            </td>
+        </tr>
+           <tr class="fila fila8">
             <td class="item item_prop"><code><b>display:</b></code></td>
             <td class="item">La propiedad CSS display especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible). </td>
             <td class="item">
@@ -442,20 +449,29 @@
                </td>
            </tr>
            <tr class="fila fila8">
-               <td class="item item_prop"><code><b></b></code></td>
-               <td class="item"></td>
-               <td class="item"></td>
+               <td class="item item_prop"><code><b>align-items:</b></code></td>
+               <td class="item">La propiedad CSS align-items establece el valor align-self sobre todos los descendientes directos de un grupo. La propiedad align-self indica la alineación de un elemento dentro del bloque que lo contiene. En Flexbox controla la alineación de los elementos del Cross Axis (en-US), en Grid Layout controla la alineación de los elementos en el eje Block dentro de su área grid.</td>
+               <td class="item">strech | center | start | end | flex-start | flex-end | self-star | self-end</td>
                <td class="item item_ejemplo">
-                    <div>
+                    
+                    <div class="align-items_container">
+                        <div>
+                            align- <br>
+                            items:
+                        </div>
                     </div>
                </td>
            </tr>
            <tr class="fila fila8">
-               <td class="item item_prop"><code><b></b></code></td>
-               <td class="item"></td>
-               <td class="item"></td>
+               <td class="item item_prop"><code><b>align-self:</b></code></td>
+               <td class="item">La propiedad CSS align-self alinea los elementos flexibles de la línea flexible actual, reemplazando el valor de align-items. Si el límite transversal de alguno de los elementos está definido como auto, el valor de align-self es ignorado.</td>
+               <td class="item"> auto | flex-start | flex-end | center  | baseline | strech</td>
                <td class="item item_ejemplo">
-                    <div>
+                    <div class="self-container">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
                     </div>
                </td>
            </tr>
