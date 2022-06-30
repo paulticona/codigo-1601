@@ -1,0 +1,19 @@
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+b{
+    color: lightgreen;
+    width: 50%;
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 10px black;
+}
+.resultado{
+    font-size: xx-large;
+}

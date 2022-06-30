@@ -1,0 +1,25 @@
+body{
+    background-color: lightslategray;
+}
+.container{
+    width: 400px;
+    min-height: 600px;
+    background-color: #ddd;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+p{
+    margin:0;
+}
+hr{
+    height: 10px;
+    background-color: lightcoral;
+}
+.caja_multiplicar{
+    margin: 0;
+    width: 100%;
+}
