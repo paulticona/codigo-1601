@@ -15,6 +15,14 @@ const users = [
       isDeveloper: false,
       age: 21,
     },
+    {
+      name: "pedro",
+      lastName: "Zapata",
+      phoneNumber: "99999999",
+      address: "Calle falsa 1234",
+      isDeveloper: false,
+      age: 21,
+    },
   ];
   
   for (let user in users) {
