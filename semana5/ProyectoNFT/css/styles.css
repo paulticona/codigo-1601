@@ -1,0 +1,112 @@
+
+
+/**css Para Tarjeta de producto*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: system-ui, -apple-system, sans-serif;
+}
+h1{
+    margin: 20px;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 5px 2px 15px 5px rgba(196, 196, 196, 0.94);
+    width: 15%;
+    margin: 8px;
+}
+.title{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+.container-photo{
+    text-align: center;
+}
+.container-photo img{
+    margin: 10px 0 10px 0;
+    width: 100%;
+}
+
+.container-price{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    margin-left: 15px;
+}
+.titulo_precio, .name{
+    font-size: 0.85em;
+    font-weight: bold;
+}
+.titulo_precio{
+    margin-top: 20px;
+}
+.price{
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color: black;
+}
+.last-price{
+    color: #797A8B;
+}
+svg{
+    position: relative;
+    top: 3px;
+    margin: 0 6px;
+}
+.btn-buy{
+    border: none;
+    background-color: #2079d2;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*buscador*/
+
+.section{
+    text-align: center;
+}
+.buscador{
+    margin-bottom: 20px;
+}
+#input-search{
+    padding: 8px;
+    width: 300px;
+}
+#btn-search{
+    border: solid rgb(12, 145, 101);
+    background-color: rgb(12, 145, 101);
+    border-radius: 8px;
+    padding: 6.5px;
+    color: white;
+}
+#input-search{
+    border-radius: 8px;
+}
+/**RESPONSIVE*/
+@media only screen and (max-width: 600px) {
+    .card {
+      width: 60%;
+    }
+  }

@@ -1,42 +1,64 @@
-const artNFTs = [
-    {
-        imagen:
-        "https://img.seadn.io/files/dbbe1461c731ec219482ff02dc7b3511.png?fit=max-",
-        autor: "Sudfah de Melissa wiederrecht",
-        seudonimo: "Sudfah",
-        dueños: 0,
-        precio_minimo: 1.7,
-        precio: 2,
-        tipo: "coleccionable",
-        token_id: "328000380",
-        blockchain: "Etherium",
-        contract_address: "0xa1"
-    },
-    {
-        imagen:
-        "https://img.seadn.io/files/6cc2223e65552af70f2757d924408b63.png?fit=max",
-        autor: "Sudfah de Melissa wiederrecht",
-        seudonimo: "Sudfah",
-        dueños: 1,
-        precio_minimo: 1.7,
-        precio: 2,
-        tipo: "coleccionable",
-        token_id: "328000296",
-        blockchain: "Etherium",
-        contract_address: "0xa2",
-        descripcion: "Por melissawiederrecht Sudfah ('feliz accidente' en árabe) es una colección generativa que celebra la belleza que puede surgir del caos, los errores y los accidentes. Una sola línea caligráfica pretende contar una historia (a veces errante y confusa por derecho propio, pero siempre serpenteando de un lado a otro) El líquido digital se derrama sobre él y lleva la tinta en direcciones inesperadas, descontroladas y cuenta una historia mucho más interesante que la que pretendía la línea... y muchas veces más hermosa."
-    },
-    {
-        imagen:
-        "https://img.seadn.io/files/dbbe1461c731ec219482ff02dc7b3511.png?fit=max-",
-        autor: "Sudfah de Melissa wiederrecht",
-        seudonimo: "Sudfah",
-        dueños: 0,
-        precio_minimo: 1.7,
-        precio: 2.3,
-        tipo: "coleccionable",
-        token_id: "328000380",
-        blockchain: "Etherium",
-        contract_address: "0xa3"
+//seleccionamos nuestro cotenedor
+const container = document.querySelector(".container")
+
+// aqui seleccionamos nuestro boton
+const inputSearch = document.querySelector("#input-search")
+const btnSearch = document.querySelector("#btn-search")
+//mapeamos uestro array de objetos
+function crearCards(arrayDatos){
+    //limpiamo en container
+    container.innerHTML = ""
+
+    //hacemos un map a nnuestros array para insertar los ojetos
+    arrayDatos.map((artNFT)=>{
+        container.innerHTML += `
+        <div class="card">
+        <h4 class="title"></h4>
+        <div class="container-photo">
+        <img
+            src=${artNFT.imagen}
+            alt=""
+            width="300"
+        />
+        </div>
+        <div class="container-price">
+            <p class="text name">${artNFT.seudonimo} ${artNFT.numero}
+            
+            <p class="text titulo_precio">Precio</p>
+            <p class="text price">
+                <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                    fill="#151013" />
+                </svg>${artNFT.precio}
+            </p>
+            <p class="text last-price">Oferta por 
+                <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#db45c7">
+                </svg>
+                ${artNFT.precio_minimo}
+            </p>
+        </div>
+        <button class="btn-buy">Comprar</button>
+    </div>
+        `
+    })
+}
+crearCards(artNFTs)
+
+//* Funcionalidad de boton
+btnSearch.onclick = function(){
+    //variable textSearch para alamacenar el valor del inputText
+    const textSearch = inputSearch.value
+    //validacion
+    if(textSearch == ""){
+        alert("Ingrese almenos un valor para iniciar busqueda")
+        return
     }
-]
+    //filtramos nuestro array para la busqueda
+    //comvertimos el valor del input de la busqueda a minusculas
+    //como tambien el valor de el array de objetos artNfts
+    const filtro = artNFTs.filter(x=>
+        x.seudonimo.toLowerCase().includes(textSearch.toLowerCase())
+    )
+    crearCards(filtro) 
+}
