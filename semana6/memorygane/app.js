@@ -55,7 +55,6 @@ const cardArray = [
 //barajar el array osea las cartas
 cardArray.sort(() => 0.5 - Math.random())
 const gridDisplay = document.querySelector("#grid")
-//arrays para pushear
 let cardsChosen = []
 let cardChosenId = []
 
@@ -77,15 +76,11 @@ function checkForMatch(){
     
     //comparar el arrary cardChosen que tendra siempre dos objetos
      if (optionOneId == optionTwoId) {
-        cards[optionOneId].setAttribute["src", "images/blank.png"]
+        
         alert("misma carta")
      }else if(cardsChosen[0] == cardsChosen[1]){
         cards[optionOneId].setAttribute["src", "images/white.png"]
         cards[optionTwoId].setAttribute["src", "images/white.png"]
-        // Quitar event click a las cartas white:
-		cards[optionOneId].removeEventListener("click", flipCard);
-		cards[optionTwoId].removeEventListener("click", flipCard);
-		cardsWon.push(cardsChosen);
         alert("iguales")
      }else{
         //cerrar cartars abiertas
@@ -97,11 +92,6 @@ function checkForMatch(){
     //limpiar arreglo
     cardsChosen = []
     cardChosenId = []
-
-    resultDisplay.textContent = cardsWon.length;
-	if (cardsWon.length === cardArray.length / 2) {
-		resultDisplay.textContent = "you win";
-	}
 }
 
 function flipCard(){
