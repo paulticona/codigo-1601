@@ -45,20 +45,37 @@ function crearCards(arrayDatos){
 }
 crearCards(artNFTs)
 
-//* Funcionalidad de boton
-btnSearch.onclick = function(){
+function searchfilter(){
     //variable textSearch para alamacenar el valor del inputText
     const textSearch = inputSearch.value
-    //validacion
+     //validacion
     if(textSearch == ""){
         alert("Ingrese almenos un valor para iniciar busqueda")
         return
     }
     //filtramos nuestro array para la busqueda
     //comvertimos el valor del input de la busqueda a minusculas
-    //como tambien el valor de el array de objetos artNfts
+     //como tambien el valor de el array de objetos artNfts
     const filtro = artNFTs.filter(x=>
         x.seudonimo.toLowerCase().includes(textSearch.toLowerCase())
     )
     crearCards(filtro) 
 }
+function limpiarInput(){
+    inputSearch.value=""
+}
+
+//* Funcionalidad de boton
+btnSearch.onclick = function(){
+    searchfilter()
+    limpiarInput(git)
+}
+inputSearch.addEventListener("keyup", function(e){
+    let keycode = e.keyCode || e.which
+    if (keycode == 13) {
+        searchfilter()
+        limpiarInput()
+    }
+})
+
+
