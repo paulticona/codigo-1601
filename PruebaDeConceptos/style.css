@@ -2,3 +2,46 @@ h1{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 900;
 }
+.box{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.eventos{
+    background-color: aquamarine;
+    width: 150px;
+    margin: auto;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px;
+}
+.evento{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: auto;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.btn-click{
+    border-radius: 10px;
+}
+.mouseOver{
+    margin-top: 10px;
+    height: auto;
+}
+.mouseOver ul{
+    padding: 0;
+}
+.sports{
+
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    border: 1px solid grey;
+}

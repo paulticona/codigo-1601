@@ -93,27 +93,25 @@ function editTask(element) {
 }
 
 function createInputTask(id, text, status) {
-  $("<div>", {
-    html: `
-      <input data-id="${id}" type="checkbox"><span class="${status}">${text}</span>
-      <button onclick="editTask(this)">✏️</button>
-      <button>👁</button>
-      <button onclick="deleteTask(this)">❌</button>
-    `,
-  })
+  $("<div class='row my-2'>")
+		.html(
+			`
+      <div class='col-6 col-sm-8 col-md-9'>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" data-id="${id}" id="check_${id}">
+          <label class="form-check-label ${status}" for="check_${id}">
+            ${text}
+          </label>
+        </div>
+      </div>
+      <div class='col-6 col-sm-4 col-md-3'>
+        <button class='btn btn-light' onclick="editTask(this)">✏️</button>
+        <button class='btn btn-light'>👁</button>
+        <button class='btn btn-dark' onclick="deleteTask(this)">❌</button>
+      </div>
+    `
+		)
     .appendTo(sectionTask)
     .hide()
     .fadeIn(1000);
-
-  $("div").hover(
-    // este estilo se va a mantener
-    function () {
-      $(this).css("background-color", "#cdcdcd");
-    },
-    // si ponemos otra funcion separa por , entendera que se ejecutara
-    // cuando saque el mouse el element
-    function () {
-      $(this).css("background-color", "#fff");
-    }
-  );
 }

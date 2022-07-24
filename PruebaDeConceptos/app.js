@@ -80,26 +80,101 @@ const llamarApi = async (url, llamados = 0) => {
     return llamarApi(url, llamados + 1)
     }
 } 
-
+*/
+/*
 const suma = (number, sum = 0) => {
     number === 0
         ? sum
         : suma(number - 1, sum + number)
 }
+
+const r = suma(100)
+console.log(r)
+
 */
+const etiqueta = document.querySelector('.parrafo')
+etiqueta.style.color = 'red'
 
-function generarpiramide(base){
-    for (let i=1; i<=base; i++){
-        for (let j=0; j<i; j++){
-              console.log("*")
-        }
-        document.write("<br />");
-    }
-}
-
-console.log('%capp.js line:98 generarpiramide(5)', 'color: #007acc;', generarpiramide(5));
-
-
-while () {
+const listItems = document.querySelectorAll('.list-items')
+for (let i = 0; i < listItems.length; i++) {
     
 }
+
+console.log(listItems)
+
+const ul = document.querySelector('.list')
+const li = document.createElement('li')
+const firstItem = document.querySelector('.list-items')
+li.innerText = "Nuevo Li"
+ul.append(li)
+
+console.log(firstItem?.innerText)
+console.log(firstItem?.textContent)
+console.log(firstItem?.innerHTML)
+
+li.innerText = 'modificando el texto con innertext e'
+li.innerHTML += ` <strong>innerhtml</strong>`
+
+//asiganar un nuevo atributo a una etiqueta
+li.setAttribute('id','ultimo-item')
+console.log(li)
+
+console.log(li.getAttribute('id'))
+//asignar una clase al elemento
+li.classList.add('box')
+//removemos la clase
+//li.classList.remove('box')
+//averiguar si tiene la clase esto deberia botar un boleano(true or false)
+//console.log(li.classList.contains('box'))
+
+//Eliminar elemntos
+//firstItem?.remove()
+
+//Obtener nodo pariente del elemento
+//console.log(ul?.parentNode?.parentNode)
+//console.log(ul?.parentElement?.parentElement)
+//Obtener los nodos hijos del elemento
+console.log(ul.childNodes)
+//ejemplo
+//Onbetenemos los elemntos hijos
+//console.log(ul?.childElementCount)
+console.log(ul.firstElementChild.firstElementChild)
+//console.log(ul?.lastElementChild)
+//elemntos nodos hijos
+console.log(ul.children)
+ul.childNodes[1].style.opacity = 0.5
+//nodo hermano
+console.log(ul.children[2].previousElementSibling)
+console.log(ul.children[3].nextElementSibling)
+
+console.log(ul.previousSibling)
+console.log(ul.nextSibling)
+
+//seleccionamos el boton
+const button = document.querySelector('.btn-click')
+//escuchamos el evento click pra realizar todo lo que etsa dentro de la funcion
+button.addEventListener('click', ()=>{
+    const li2 = document.createElement('li2')
+    li2.innerText = 'Hola soy un nuevo LI'
+    ul.append(li2)
+})
+/*
+const newBgColor = document.querySelector('.mouseOver')
+//escuchamos el evento mouseOver y le pasamos los resuladod e la funcion
+newBgColor.addEventListener('mouseover', ()=>{
+    newBgColor.innerText = 'lorem'
+    newBgColor.style.padding = '10px'
+    newBgColor.style.backgroundColor = 'grey'
+})
+*/
+// obtiene todos los id y los muestra en un mensaje
+document.querySelector('.deportes').addEventListener('click', (e)=>{
+    console.log(e.target.getAttribute('id'))
+    //cambiamos el color de background detectando la etiqueta seleccionana con target
+    const target = e.target
+    let lol = target.matches('li')
+    console.log(lol)
+    if (target.matches('li')) {
+        target.style.backgroundColor = 'lightblue'
+    }
+})

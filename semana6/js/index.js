@@ -9,14 +9,19 @@ checkboxShowPassword.onchange = function() {
     inputPassword.type = this.checked ? "text" : "password"
 }
 
-inputPasswordConfirm.onkeyup = function () {
-    console.log(this.value);
-  };
+//inputPasswordConfirm.onkeyup = function () {
+ //   console.log(this.value);
+//};
 
+//inputPasswordConfirm.addEventListener('keyup', function(e){
+ // console.log(this.value);
+//})
 // Cuando hablamos del evento del teclado
 // * onkeydown => El el primer evento que se ejecuta a presionar la tecla
 // * onkeypress  => Es el evento que se ejecuta mientras se presiona la tecla
 // * onkeyup => Es el ultimo evento que ese ejecuta cuando se levanta la tecla
+
+
 
 inputPasswordConfirm.onkeyup = function () {
     //? paso1 : Validar que el password tengo contenido
@@ -65,3 +70,4 @@ inputPasswordConfirm.onkeyup = function () {
     //Si regex es falso muestren un mensaje de error
     // Si es verdade no muestren nada
   };
+  

@@ -27,3 +27,4 @@ function updateTask(id, key, value) {
 function saveInLocalStorage() {
   localStorage.setItem("tasks", JSON.stringify(arrayTask));
 }
+

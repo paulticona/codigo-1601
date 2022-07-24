@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../img/54773.jpg) no-repeat center center/ cover;
+    height: 100vh;
+    position: relative;
+}
+#open-btn{
+    position: absolute;
+    top: 90%;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 50px;
+    font-size: 1.3rem;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 3px black;
+    transition: .5s;
+}
+#open-btn:hover{
+    background-color: #fff;
+    color: black;
+}
+.modal{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    top: 50%;
+    left: calc(50% - 100px);
+    transform: translate(+50%, - 50%);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+
+    animation-name: animatemodal;
+    animation-duration: .4s;
+}
+
+#close-btn{
+    cursor: pointer;
+    font-size: 3rem;
+    color: red;
+}
+.modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
