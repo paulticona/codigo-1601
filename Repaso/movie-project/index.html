@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body class="bg bg-black">
+    <div class="d-flex m-4">
+        <div class="input-group w-25 m-1">
+            <input type="text" id="input-text-num-numero-pelis" class="form-control" placeholder="Numero de Pelis...">
+            <button id="btn-get-movies" class="btn btn-primary">Go Pelis</button>
+        </div>
+        <button id="btn-save-api" class=" btn btn-success m-1">Guarda en Server MokAPI</button>
+        <button class="btn btn-warning m-1" id="btn-get-movies-mock-api">Go Pelis de MockAPI</button>
+    </div>
+    <div class="row row-cols-1 row-cols-lg-5 m-3" id="container-movies"></div>
+
+    <!--Table data from mockAPI-->
+    <div class="table-responsive" id="div-table">
+        <table class="table caption-top text-white">
+            <caption class="text-center text-bg-success text-bg-dark">MockAPI Dada:
+            </caption>
+            <strong class="text-info">Resultados: <span id="result"></span></strong>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">ProgramType</th>
+                    <th scope="col">Year</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-container">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+crossorigin="anonymous">
+</script>
+<script type="module" src="./index.js"></script>
+</body>
+</html>
